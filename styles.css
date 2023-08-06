@@ -1,0 +1,166 @@
+/* Reset default browser styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+  background-color: #ff6b6b;
+  background-image: linear-gradient(45deg, #ff6b6b, #e74444);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 3vh;
+  justify-content: space-between;
+}
+
+img {
+  height: 35px;
+  width: 275px;
+  padding-top: 18px;
+  display: flex;
+  mix-blend-mode: luminosity;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Content styles */
+.content {
+  text-align: center;
+  padding: 40px;
+  background-color: #f3f3f3;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Visual sections styles */
+.visual-section {
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.visual-section img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 5px;
+}
+
+.visual-section h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.visual-section p {
+  font-size: 20px;
+  color: #666;
+}
+
+/* Buttons styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f9ca24;
+  background-image: linear-gradient(45deg, #f9ca24, #f0932b);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f0932b;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* ... Previous responsive styles ... */
+
+  /* Additional responsive styles for visuals */
+  .visual-section img {
+    max-width: 100%;
+  }
+
+  /* Adjust font-sizes for smaller screens */
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .visual-section h2 {
+    font-size: 28px;
+  }
+
+  .visual-section p {
+    font-size: 16px;
+  }
+}
